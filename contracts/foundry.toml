@@ -1,0 +1,69 @@
+[profile.default]
+src = "src"
+out = "out"
+libs = ["lib"]
+solc_version = "0.8.20"
+optimizer = true
+optimizer_runs = 200
+
+[profile.default.fuzz]
+runs = 1000
+
+[profile.default.invariant]
+runs = 1000
+depth = 15
+fail_on_revert = false
+
+[profile.default.metadata]
+bytecode_hash = "none"
+
+[profile.default.via_ir]
+via_ir = true
+
+[profile.default.extra_output]
+extra_output = ["metadata", "storageLayout", "evm.assembly"]
+
+[profile.default.verbosity]
+verbosity = 4
+
+[profile.default.gas_reports]
+gas_reports = ["*"]
+
+[profile.default.gas_reports_ignore]
+gas_reports_ignore = ["forge-std/*"]
+
+[profile.default.etherscan]
+etherscan = { key = "${ETHERSCAN_API_KEY}" }
+
+[profile.default.rpc_endpoints]
+monad_testnet = "https://rpc.testnet.monad.xyz"
+monad_mainnet = "https://rpc.monad.xyz"
+
+[profile.default.sources]
+remappings = [
+    "@openzeppelin/=lib/openzeppelin-contracts/",
+    "forge-std/=lib/forge-std/src/",
+    "@solmate/=lib/solmate/src/",
+    "@uniswap/=lib/uniswap-v3-core/",
+    "@aave/=lib/aave-v3-core/",
+    "@chainlink/=lib/chainlink/",
+    "@opengsn/=lib/opengsn-contracts/",
+    "@superfluid/=lib/superfluid-protocol-monorepo/",
+    "@ens/=lib/ens-contracts/",
+    "@compound/=lib/compound-protocol/",
+    "@dydx/=lib/dydx-v3/",
+    "@balancer/=lib/balancer-v2-monorepo/",
+    "@curve/=lib/curve-contract/",
+    "@yearn/=lib/yearn-vaults/",
+    "@synthetix/=lib/synthetix/",
+    "@aave/=lib/aave-v3-core/",
+    "@opengsn/=lib/opengsn-contracts/",
+    "@superfluid/=lib/superfluid-protocol-monorepo/",
+    "@ens/=lib/ens-contracts/",
+    "@compound/=lib/compound-protocol/",
+    "@dydx/=lib/dydx-v3/",
+    "@balancer/=lib/balancer-v2-monorepo/",
+    "@curve/=lib/curve-contract/",
+    "@yearn/=lib/yearn-vaults/",
+    "@synthetix/=lib/synthetix/"
+] 
