@@ -1,5 +1,5 @@
 import { BookOpen, TrendingUp, Users, Award, ArrowRight } from "lucide-react";
-import Navigation from "../../components/Navigation";
+import Navigation from "./components/Navigation";
 
 export default function Home() {
   return (

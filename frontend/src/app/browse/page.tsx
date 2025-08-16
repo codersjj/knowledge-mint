@@ -1,5 +1,5 @@
 import { Search, Filter, BookOpen, Clock, Eye, Star } from "lucide-react";
-import Navigation from "../../../components/Navigation";
+import Navigation from "../components/Navigation";
 
 export default function BrowsePage() {
   const mockContent = [

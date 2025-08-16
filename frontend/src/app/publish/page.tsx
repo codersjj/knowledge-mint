@@ -1,5 +1,5 @@
 import { Upload, FileText, Tag, DollarSign, Eye } from "lucide-react";
-import Navigation from "../../../components/Navigation";
+import Navigation from "../components/Navigation";
 
 export default function PublishPage() {
   return (

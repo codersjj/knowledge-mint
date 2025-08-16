@@ -8,7 +8,7 @@ import {
   Eye,
   Star,
 } from "lucide-react";
-import Navigation from "../../../components/Navigation";
+import Navigation from "../components/Navigation";
 
 export default function DashboardPage() {
   const mockStats = {
