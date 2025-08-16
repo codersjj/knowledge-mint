@@ -11,7 +11,14 @@
   "dependencies": {
     "react": "19.1.0",
     "react-dom": "19.1.0",
-    "next": "15.4.6"
+    "next": "15.4.6",
+    "wagmi": "^2.5.7",
+    "viem": "^2.7.9",
+    "@rainbow-me/rainbowkit": "^2.0.0",
+    "@tanstack/react-query": "^5.17.9",
+    "lucide-react": "^0.294.0",
+    "clsx": "^2.0.0",
+    "tailwind-merge": "^2.2.0"
   },
   "devDependencies": {
     "typescript": "^5",
