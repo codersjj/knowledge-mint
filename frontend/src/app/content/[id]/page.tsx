@@ -15,10 +15,15 @@ import {
   calculateReadingTime,
 } from "../../../lib/utils";
 
-export default function ContentPage({ params }: { params: { id: string } }) {
+export default async function ContentPage({
+  params,
+}: {
+  params: Promise<{ id: string }>;
+}) {
+  const { id } = await params;
   // Mock content data - in real app, fetch from API/blockchain
   const content = {
-    id: params.id,
+    id: id,
     title: "Complete Solidity Smart Contract Development Guide",
     author: "Alice Crypto",
     authorAddress: "0x1234...5678",
